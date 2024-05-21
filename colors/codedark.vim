@@ -654,3 +654,4 @@ call <sid>hi('LspCxxHlSymNamespace', s:cdSilver, {}, 'none', {})
 " Coc Explorer:
 call <sid>hi('CocHighlightText', {}, s:cdSelection, 'none', {})
 call <sid>hi('CocExplorerIndentLine', s:cdCursorDark, {}, 'none', {})
+call <sid>hi('CocInlayHint', s:cdLineNumber, {}, 'none', {})
