@@ -222,6 +222,7 @@ hi! link Float Number
 call <sid>hi('Identifier', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('Function', s:cdYellow, {}, 'none', {})
 call <sid>hi('Statement', s:cdPink, {}, 'none', {})
+"call <sid>hi('Statement', s:cdGreen, {}, 'none', {})
 call <sid>hi('Conditional', s:cdPink, {}, 'none', {})
 call <sid>hi('Repeat', s:cdPink, {}, 'none', {})
 call <sid>hi('Label', s:cdPink, {}, 'none', {})
@@ -367,6 +368,15 @@ hi! link asciidocQuotedMonospaced2 asciidocQuotedMonospaced
 hi! link asciidocQuotedUnconstrainedBold asciidocQuotedBold
 hi! link asciidocQuotedUnconstrainedEmphasized asciidocQuotedEmphasized
 hi! link asciidocURL markdownUrl
+
+
+" Doxygen
+"call <sid>hi('doxygenSpecialOnelineDesc', {}, s:cdgreen, 'none', {})
+call <sid>hi('doxygenBrief', s:cdGreen, {}, 'none', {})
+call <sid>hi('doxygenParamName', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('doxygenSpecialOnelineDesc', s:cdGreen, {}, 'none', {})
+"call <sid>hi('doxygenSpecialTypeOnelineDesc', s:cdGreen, {}, 'none', {})
+call <sid>hi('doxygenParam', s:cdBlue, {}, 'none', {})
 
 " JSON (built-in)
 call <sid>hi('jsonKeyword', s:cdLightBlue, {}, 'none', {})
@@ -642,6 +652,18 @@ call <sid>hi('Namespace', s:cdSilver, {}, 'none', {})
 call <sid>hi('NamespaceRef', s:cdSilver, {}, 'none', {})
 call <sid>hi('NamespaceAlias', s:cdSilver, {}, 'none', {})
 
+call <sid>hi('cppOperator', s:cdPink, {}, 'none', {})
+call <sid>hi('cppStatement', s:cdBlue, {}, 'none', {})
+" coc.nvim
+call <sid>hi('CocSemTypeStruct', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CocSemTypeEnum', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CocSemTypeNamespace', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CocSemTypeClass', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CocSemTypeTypeAlias', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CocSemTypeConstructor', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CocSemTypeField', s:cdLightBlue, {}, 'none', {})
+" call <sid>hi('CocSemTypeMacro', s:cdBlue, {}, 'none', {})
+
 " C++ lsp-cxx-highlight
 call <sid>hi('LspCxxHlSymClass', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymStruct', s:cdBlueGreen, {}, 'none', {})
@@ -649,7 +671,7 @@ call <sid>hi('LspCxxHlSymEnum', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymTypeAlias', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymTypeParameter', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymConcept', s:cdBlueGreen, {}, 'italic', {})
-call <sid>hi('LspCxxHlSymNamespace', s:cdSilver, {}, 'none', {})
+call <sid>hi('LspCxxHlSymNamespace', s:cdBlueGreen, {}, 'none', {})
 
 " Coc Explorer:
 call <sid>hi('CocHighlightText', {}, s:cdSelection, 'none', {})
